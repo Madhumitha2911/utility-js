@@ -30,7 +30,7 @@ describe('filter', () => {
         expect(filter(list, condition)).toEqual(expected);
     })
 
-    it('filter will give only uppercase letters in list when when filterUppercase is given as condition', () => {
+    it('filter will give only uppercase letters in list when filterUppercase is given as condition', () => {
         const list = ['a', 'A', 'b', 'C', 'D'];
         const condition = value => (value >= 'A' && value <= 'Z');
         const expected = ['A', 'C', 'D'];
